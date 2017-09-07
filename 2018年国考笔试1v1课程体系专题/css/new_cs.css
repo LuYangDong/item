@@ -1,0 +1,110 @@
+
+body{font-size:12px;font-family:"微软雅黑";}
+		body,dl,dd,h1,h2,h3,h4,h5,h6,p{margin:0;}
+		h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px; font-family:"微软雅黑";}
+		img{vertical-align:bottom;}
+		ul,ol{margin:0;padding:0;list-style:none;}
+		em,i{font-style:normal;}
+		strong,b{font-weight:normal;}		
+		a{text-decoration:none; color:#333;}
+                  img{border:none;}
+
+		.clearfix{*zoom:1;}
+		.clearfix:after{content:"";clear:both;display:block;}
+		
+		.content{margin:0 auto;width:1000px;}
+		.head{background:#0099f4;height:50px;width: 100%;color:#fff;}
+		.nav_lt{float: left;color:#fff;}
+		.nav_lt div{display:inline-block;padding-left:30px;line-height:40px;color:#fff;}
+        .nav_lt a{color:#fff;}
+        .nav_rt{float:right;color:#fff;font:18px/50px "Microsoft YaHei";}
+        .banner{background: url(../imgs/banner.png) no-repeat center center;height:758px;}
+		.ctn1{background: url(../imgs/ico1.png) no-repeat 54px 106px;height:220px;}
+		.ctn1_tlt{background:url(../imgs/ico2.png) no-repeat 856px 81px;
+		            font:bold 48px/120px "Microsoft YaHei";
+		            padding:82px 0 0 140px;height:120px;}
+		.ctn1_lt{float:left;height: 624px;background: url(../imgs/ico3.png) no-repeat left center;width:500px;}
+        .ctn1_lt dt{float:left;width:110px;text-align: center;font:bold 18px/28px "微软雅黑";}
+        .ctn1_lt dd{float:left;width:302px;font:14px/25px "微软雅黑";padding-left:48px;}
+		.ctn1_lt span{font:bold 16px/25px "Microsoft YaHei";}
+	   .ctn1_rt{float:right;height: 624px;background: url(../imgs/ico3.png) no-repeat left center;width:500px;}
+	    .ctn1_rt dt{float:left;width:110px;text-align: center;font:bold 18px/28px "微软雅黑";}
+        .ctn1_rt dd{float:left;width:302px;font:14px/25px "微软雅黑";padding-left:48px;}
+		.ctn1_rt span{font:bold 16px/25px "Microsoft YaHei";}
+		.content2{height: 2357px;background:url(../imgs/pic3.png) no-repeat center center;width:100%;margin-top:44px;}
+        .ctn2{background: url(../imgs/ico1.png) no-repeat 146px 74px;height:174px;}
+        .ctn2_tlt{background:url(../imgs/ico2.png) no-repeat 789px 58px;
+		            font:bold 48px/74px "Microsoft YaHei";
+		            padding:66px 0 0 220px;height:74px;}
+        .ctn2_one{background:#fff url(../imgs/ico4.png) no-repeat 280px 38px;height:580px;position:relative;border-radius: 20px;}
+        .ctn2_one a{font:18px/30px "微软雅黑";}
+        .ctn2_one span{font:bold 20px/30px "微软雅黑";  color:#3ae0a8;}
+        .ctn2_one_nb1{width:226px ;position: absolute;left:376px;top:128px;}
+         .ctn2_one_nb1 a{font:20px/36px "微软雅黑";color:#fff;}
+        .ctn2_one_nb1 span{font:30px/36px "微软雅黑";color:#fff000;}
+        .ctn2_one_nb2{width:272px ;position: absolute;left:701px;top:88px;}
+        .ctn2_one_nb3{width:256px ;position: absolute;left:701px;top:300px ;}
+        .ctn2_one_nb4{width:272px ;position: absolute;left:30px;top:88px ;}
+        .ctn2_one_nb5{width: 256px;position: absolute;left:30px;top: 300px;}
+        .ctn2_one_nb6{width: 418px;position: absolute;left:290px;top:468px ;}
+        
+		.ctn3{background: url(../imgs/ico1.png) no-repeat 85px 80px;height:175px;}
+        .ctn3_tlt{background:url(../imgs/ico2.png) no-repeat 858px 60px;
+		            font:bold 48px/108px "Microsoft YaHei";
+		            padding:68px 0 0 154px;height:108px;}
+        #ctn3_cn{ height: 580px;border-radius:20px 20px 0 0;background:#fff;}
+		#ctn3_ttl li{float:left;margin:40px 16px 22px 0;text-align:center;
+		             color:#0097f4;font:bold 18px/48px "微软雅黑";width:176px;
+		           height:48px;border:1px solid #009ff5;border-radius:3px;
+		           cursor: pointer;}
+		#ctn3_ttl .active{background:url(../imgs/ico5.png) no-repeat center center;color:#fff;border:none;}
+		#ctn3_cn table{border-collapse: collapse;width:1000px;}
+		#ctn3_cn table th{height:50px;font-size:18px;border:1px solid #e0e0e0;}
+		#ctn3_cn  td a{background:url(../imgs/ico6.png) no-repeat left center;
+		                   font:16px/38px "微软雅黑";
+		                padding:10px;border-radius: 5px;color:#fff;}
+		#ctn3_cn  td{border:1px solid #e0e0e0;font:16px/28px "微软雅黑";padding:16px 13px 12px 18px;}
+        #ctn3_cn thead tr:last-child{box-shadow:0 5px 10px 0 #e5e5e5;}
+        #ctn3_cn thead tr:first-child{background:orange;}
+        #ctn3_cn tbody tr:last-child{box-shadow:0 5px 10px 0 #e5e5e5;}
+        
+		 .ctn4{background: url(../imgs/ico1.png) no-repeat 313px 35px;height:115px;}
+        .ctn4_tlt{background:url(../imgs/ico2.png) no-repeat 629px 16px;
+		            font:bold 48px/76px "Microsoft YaHei";
+		            padding:38px 0 0 408px;height:76px;}
+	  .ctn4_cn1{height:60px;width:584px;background:url(../imgs/ico7.png) repeat-y left center;
+	              font:bold 30px/60px "微软雅黑";color:#fff;margin:0 0 100px 186px;border-radius: 30px;
+	              padding:0 28px;}
+	   .ctn4_lt, .ctn4_rt{width:390px;height:370px;border-radius:8px;background:#fff;
+       						padding:100px 30px 20px 30px;position:relative;}
+	 
+       .ctn4_cn2 ul{background: #ececec;width:356px;height:328px;padding:38px 16px 0 18px;}
+       .ctn4_cn2 li{background:#fff;border-radius: 4px;padding:3px;margin-bottom:20px;}
+       .ctn4_cn2 li div{border:1px dashed #e9e9e9;padding:0px 30px;}
+       .ctn4_cn2 li a{font-size:18px;}
+        .ctn4_cn2 b{font-size:14px;}
+       .ctn4_cn2 strong{font-size:38px;}
+       .ctn4_cn2_tlt{background:url(../imgs/ctn4_ico2.png) no-repeat left center;
+       				position: absolute;top:0;font:bold 24px/64px "微软雅黑";color:#fff;
+       				left:50%;height:97px;width:240px;text-align: center;margin-left:-120px;}
+       
+       .ctn4_cn2_fot{position:absolute;left:27px;bottom:20px;background: url(../imgs/ctn4_ico1.png) no-repeat left center;
+                       width:397px;height:95px;}
+       .ctn4_lt{float:left;}
+       .ctn4_rt{float:right;}
+      .ctn4_cn2_bg{width:408px;height:36px;background:rgba(255,255,255,0.3);border-radius: 0 0 10px 10px;
+                    position:absolute;left:20px;top:490px;}
+        .ctn5{background: url(../imgs/ico1.png) no-repeat 312px 78px;height:175px;}
+        .ctn5_tlt{background:url(../imgs/ico2.png) no-repeat 629px 60px;
+		            font:bold 48px/104px "Microsoft YaHei";
+		            padding:70px 0 0 404px;height:104px;}       
+		#addr li{float:left;width:102px;height:48px;border:1px solid #666;
+		          margin-right:8px;text-align: center;font:20px/50px "微软雅黑";
+		          border-radius:4px;color:#666;
+		          cursor: pointer;}
+        #addr .active{color:#fff;font:bold 18px/50px "微软雅黑";
+        				background:url(../imgs/ctn5_ico1.png) no-repeat left center;
+        				border:none;}
+        .ctn5_tab th{text-align: left;font:bold 16px/32px "微软雅黑";padding-top:30px;}
+        .ctn5_tab td{text-align: left;font:14px/30px "微软雅黑";}					
+        .footer{background:#508cee;width:100%;height:110px;}
