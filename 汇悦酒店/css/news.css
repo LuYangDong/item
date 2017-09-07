@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+.news_bn{height:517px;width:100%;background:url(../image/news.jpg) no-repeat center center;}
+.news_cnt{height:612px;margin-top:-90px;position:relative;}
+.news_rt{ margin-top:33px;}
+.news_rt li{padding-left:258px;background:url(../image/images/pic11.jpg) no-repeat 22px 0;margin-top:12px;}
+ .news_rt li:hover {background:#2a4268 url(../image/images/pic12.jpg) no-repeat 22px 0;}
