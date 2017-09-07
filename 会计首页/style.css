@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:12px;font-family:"微软雅黑";background:#eeeaea;}
+		body,dl,dd,h1,h2,h3,h4,h5,h6,p{margin:0;}
+		h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px; font-family:"微软雅黑";}
+		img{vertical-align:bottom;}
+		ul,ol{margin:0;padding:0;list-style:none;}
+		em,i{font-style:normal;}
+		strong,b,th{font-weight:normal;}		
+		a{text-decoration:none; color:#333;}
+		 input{padding:0;margin:0;}
+		 textarea{ resize:none; overflow:auto;}
+
+		/*清浮动*/
+		.clearfix{*zoom:1;}
+		.clearfix:after{content:"";clear:both;display:block;}
+		
+		html{font-size:100px;}
+	
+		
+		.box{width:100%;max-width:720px;min-width:320px;margin:0 auto;background-color:#eeeaea;}
+		.head{height:0.88rem;font:0.32rem/0.88rem "微软雅黑";text-align:center;background-color:#f8f8f8;position:relative;}
+		.head img{width:0.40rem;}
+		.head .user{position:absolute;left:0.13rem;top:0.31rem;}
+		.head .search{position:absolute;right:0.76rem;top:0.31rem;}
+		.head .menu{position:absolute;right:0.13rem;top:0.31rem;}
+		.banner{background:url(images/zg_kj04.jpg) no-repeat center center;width:100%;height:2.2rem;}
+		.bdrm{border-bottom:1px solid #cccccc;background-color:#fff;}
+		.menu01{height:3.2rem;padding-top:12px;text-align:center;}
+		.menu01 li{float:left;padding:0.30rem  0.4rem 0;height:1.09rem;overflow:hidden;}
+		.menu01 img{width:0.68rem;}
+		.menu01 li{width:0.7rem;}
+		.menu01 li p{font:0.23rem/0.5rem "宋体";}
+		
+		.nav{position:fixed;right:20%;top:50%;width:0.68rem;height:1.42rem;}
+		.nav a{display:inline-block;width:0.68rem;height:0.68rem;}
+		.nav .nav_top{background:url(images/lu_1.png) no-repeat left top;background-size:100% 100%;}
+		.nav .nav_bottom{background:url(images/lu_2.png) no-repeat left bottom;background-size:100% 100%;}
+		
+		.content{margin-top:0.1rem;font-family:微软雅黑;border-bottom:1px solid #cccccc;}
+		.cnt_title{height:0.8rem;font-size:0.28rem;line-height:0.8rem;color:#6db5f8;background-color:#f8f8f8;padding-left:0.32rem;}
+		.cnt_ct{padding:0.25rem 0 0 0.22rem;background-color:#fff;}
+		.cnt_ct li{float:left;width:2.75rem;display:inline-block;padding:0 0.1rem 0.3rem;}
+		 .cnt_ct .ct1{font-size:0.28rem;padding-top:0.2rem;}
+		 .cnt_ct .ct2{font-size:0.22rem;padding-top:0.18rem;}
+		 .part1 img,.part2 img{width:2.76rem;}
+		 .part3 li{width:3.19rem;}
+		 .part3 li img{width:3.19rem;height:1.79rem;}
+		 .add{background-color:#fff;text-align:center;padding:0.38rem 0 0 0.32rem;height:2.74rem;}
+		 .footer{width:6.56rem;height:0.54rem;background:url(images/zg_kj35.jpg) no-repeat center center;font-size:0.34rem;line-height:0.54rem;}
+		  .add img{width:1.28rem;}
+		 .add ul{padding-left:0.67rem;}
+		 .add li{float:left;padding:0.22rem 0.23rem 0;}
+		 .end{background:#eeeaea;padding-left:0.32rem;}
+		 .end ul{height:1.48rem;}
+		  .end img{width:0.42rem;}
+		 .end li{float:left;width:2.24rem;height:1.48rem;background:url(images/zg_kj36.jpg) no-repeat right 0.42rem;font-size:0.24rem;line-height:0.52rem;text-align:center;}
+		 .end li:nth-child(3){background:none;}
+		 .end li a{display:inline-block;color:#999999;padding-top:0.32rem;}
+		 .end img{height:0.46rem;}
+		 li:hover a{color:#000;}
+		 
+		 .right{font-size:0.16rem;line-height:0.3rem;text-align:center;color:#9f9f9f;padding:0.12rem 0 0.1rem;}
+		 
+		 
+		 
