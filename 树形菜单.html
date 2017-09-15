@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="vue/js/vue.js"></script>
+</head>
+<body>
+<script type="text/x-handlebars-template" id="item-template">
+    <li>
+        <div @click="toggle">
+            {{model.name}}
+            <span v-if="isFolder">[{{open ? '-' : '+'}}]</span>
+        </div>
+        <ul v-if="isFolder" v-show="open">
+            <my-child v-for="model in model.children" :model="model"></my-child>
+            <li @click="addLi">add</li>
+        </ul>
+    </li>
+</script>
+
+
+<ul id="app">
+<my-child :model="treeData"></my-child>
+</ul>
+<script>
+
+    var data = {
+        name : 'My Tree',
+        children : [
+            {
+                name : 'child folder',
+                children : [
+                    {name : 'hello'},
+                    {name : 'wat'},
+                    {
+                        name : 'child folder',
+                        children : [
+                            {name : 'hello'},
+                            {name : 'wat'}
+                        ]
+                    }
+                ]
+            },
+            {name : 'hello'},
+            {name : 'wat'},
+                        {
+                name : 'child folder',
+                children : [
+                    {name : 'hello'},
+                    {name : 'wat'},
+                    {
+                        name : 'child folder',
+                        children : [
+                            {name : 'hello'},
+                            {name : 'wat'}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+    //外层一次 里面全部
+    var item={
+        props:{
+            model : {
+                type : Object
+            }
+        },
+        template :"#item-template",
+        data : function(){
+            return {
+                open : false
+            }
+        },
+        methods:{
+            toggle : function(){
+                if(this.isFolder){
+                    this.open = !this.open
+                }
+            },
+            addLi : function(){
+                this.model.children.push({
+                    name : 'new li'
+                })
+            }
+        },
+        addLi : function(){
+            this.model.children.push({
+                name : 'new li'
+            })
+        }
+    },
+        computed:{
+            isFolder : function(){
+                //如果当前对象下 有children数组，并且长度存在，那么返回true
+                console.log(this.model)
+                return this.model.children && this.model.children.length
+            }
+        }
+    }
+
+
+    new Vue({
+        el : '#app',
+        data : {
+            treeData : data
+        },
+        components: {
+        	'my-child' : item
+        }  
+    })
+</script>
+
+</body>
+</html>
