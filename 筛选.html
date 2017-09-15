@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/vue.js"></script>
+</head>
+<style>
+    .price{
+        border:1px solid #333333;
+        padding:2px 3px;
+        margin:0 3px;
+    }
+    .price.active{
+        border:1px solid red;
+    }
+</style>
+<body>
+    <div id="app">
+            <h1>筛选</h1>
+            <div>
+            价格：
+    <span class="price" v-for="list in typeList"
+        :class="{active:currentPrice == list}" @click="selectedPrice(list)">
+        {{list.label}}
+    </span>
+    </div>
+    <div>
+    <ul>
+    <li v-for="(item,index) in listFilter">
+        {{index +':'+ item.name +'('+item.price+'万)'}}
+    </li>
+    </ul>
+    </div>
+    </div>
+
+    <script>
+    var dataList = [
+        {
+            name : 'A',
+            price : 10
+        },
+        {
+            name : 'AB',
+            price : 5
+        },
+        {
+            name : 'AC',
+            price :3
+        },
+        {
+            name : 'AD',
+            price : 15
+        },
+        {
+            name : 'AE',
+            price : 17
+        },
+        {
+            name : 'AF',
+            price : 22
+        },
+        {
+            name : 'AQ',
+            price : 19
+        },
+        {
+            name : 'AW',
+            price : 12
+        }
+
+    ]
+
+    new Vue({
+        el : "#app",
+        data : {
+            list : dataList,
+            typeList : [
+                {
+                    label : '小于5万',
+                    value : '<5'
+                },
+                {
+                    label : '5万-10万',
+                    value : '5-10'
+                },
+                {
+                    label : '10万-15万',
+                    value : '10-15'
+                },
+                {
+                    label : '15万-20万',
+                    value : '15-20'
+                },
+                {
+                    label : '20万以上',
+                    value : '>20'
+                },
+
+            ],
+            currentPrice : '' //标识你选中的对象
+        },
+        methods:{
+            selectedPrice:function(price){
+                this.currentPrice = price;
+                console.log(price);
+            }
+        },
+        computed:{
+            listFilter:function(){
+                var list = []
+                if(!this.currentPrice){
+                    list = this.list
+                }else if(this.currentPrice.value == '<5'){
+                    list = this.list.filter(function(car){
+                        return car.price < 5
+                    })
+                }else if(this.currentPrice.value == '5-10'){
+                    list = this.list.filter(function(car){
+                        return car.price >5 && car.price < 10
+                    })
+                }else if(this.currentPrice.value == '10-15'){
+                    list = this.list.filter(function(car){
+                        return car.price >10 && car.price < 15
+                    })
+                }else if(this.currentPrice.value == '15-20'){
+                    list = this.list.filter(function(car){
+                        return car.price >15 && car.price < 20
+                    })
+                }else if(this.currentPrice.value == '>20'){
+                    list = this.list.filter(function(car){
+                        return car.price >20
+                    })
+                }
+                console.log(list);
+                return list
+            }
+        }
+
+    })
+</script>
+
+
+
+</body>
+</html>
