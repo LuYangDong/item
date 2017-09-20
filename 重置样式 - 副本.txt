@@ -1,0 +1,16 @@
+		body{font-size:12px;font-family:"Î¢ÈíÑÅºÚ";}
+		body,dl,dd,h1,h2,h3,h4,h5,h6,p{margin:0;}
+		h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px; font-family:"Î¢ÈíÑÅºÚ";}
+		img{vertical-align:bottom;}
+		ul,ol{margin:0;padding:0;list-style:none;}
+		em,i{font-style:normal;}
+		strong,b,th{font-weight:normal;}		
+		a{text-decoration:none; color:#333;}
+		 input{padding:0;margin:0;}
+		 textarea{ resize:none; overflow:auto;}
+
+		/*Çå¸¡¶¯*/
+		.clearfix{*zoom:1;}
+		.clearfix:after{content:"";clear:both;display:block;}
+
+		
